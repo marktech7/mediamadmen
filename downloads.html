@@ -1,223 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MEDIA MAD MEN - Downloads</title>
-
-  <!-- SEO -->
   <meta name="description" content="Download Media Mad Men apps for Amazon Firestick, Android TV, mobile devices, and web player.">
   <meta name="keywords" content="Media Mad Men, downloads, apps, Firestick, Android TV, mobile app, web player, controller app">
-  https://mediamadmen.com/downloads.html
+  <link rel="canonical" hrefwnloads.html
   <meta property="og:title" content="MEDIA MAD MEN - Downloads">
   <meta property="og:description" content="Download Media Mad Men apps for all your devices">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mediamadmen.com/downloads.html">
-
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
-
   <style>
-    :root{
-      --brand-red:#e63946;
-      --brand-red-dark:#b71c1c;
-      --gold:#ffd700;
-      --text:#f5f5f5;
-      --muted:#ccc;
-      --card-bg1:#2c2c2c;
-      --card-bg2:#1a1a1a;
-      --border:#444;
-      --page-bg: rgba(24, 24, 24, 0.9);
-      --blue:#0d6efd; /* refined blue */
-      --blue-dark:#0b5ed7;
-    }
-
-    /* Page */
     .downloads-page {
       min-height: 100vh;
-      background:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('https://images.pexels.com/photos/17561470/pexels-photo-17561470.jpeg')
-        center/cover fixed;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                  url('https://images.pexels.com/photos/17561470/pexels-photo-17561470.jpeg') center/cover fixed;
       padding: 2rem;
     }
-
     .downloads-container {
       max-width: 1000px;
       margin: 0 auto;
-      background: var(--page-bg);
+      background: rgba(24, 24, 24, 0.9);
       border-radius: 20px;
       padding: 3rem;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
-
-    /* Header block */
     .downloads-header {
       text-align: center;
       margin-bottom: 3rem;
     }
     .downloads-header h1 {
-      font-size: 3.2rem;
-      color: var(--brand-red);
+      font-size: 3.5rem;
+      color: #e63946;
       font-family: 'Bebas Neue', Impact, sans-serif;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     .downloads-header p {
-      font-size: 1.15rem;
-      color: var(--text);
-      max-width: 640px;
+      font-size: 1.3rem;
+      color: #f5f5f5;
+      max-width: 600px;
       margin: 0 auto;
     }
-
-    /* Sections */
     .download-section {
       margin-bottom: 3rem;
     }
     .download-section h2 {
-      color: var(--gold);
-      font-size: 1.8rem;
+      color: #ffd700;
+      font-size: 2rem;
       margin-bottom: 1.5rem;
       text-align: center;
-      border-bottom: 2px solid var(--brand-red);
+      border-bottom: 2px solid #e63946;
       padding-bottom: 0.5rem;
     }
-
-    /* Grid & Cards */
     .download-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.25rem;
+      gap: 1.5rem;
       margin-bottom: 2rem;
     }
-
-    /* Generic card style (works for both <a> and <div>) */
-    .dl-card {
+    .download-btn {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: linear-gradient(135deg, var(--card-bg1) 0%, var(--card-bg2) 100%);
-      border: 2px solid var(--border);
+      background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+      border: 2px solid #444;
       border-radius: 15px;
-      padding: 1.25rem 1.25rem 1rem;
-      color: var(--text);
+      padding: 1.5rem;
       text-decoration: none;
-      transition: all 0.25s ease;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      min-height: 190px;
+      color: #f5f5f5;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
-    .dl-card:hover,
-    .dl-card:focus-visible {
-      transform: translateY(-4px);
-      border-color: var(--brand-red);
-      box-shadow: 0 8px 22px rgba(230, 57, 70, 0.28);
-      outline: none;
+    .download-btn:hover {
+      transform: translateY(-5px);
+      border-color: #e63946;
+      box-shadow: 0 8px 25px rgba(230, 57, 70, 0.3);
     }
-
     .download-icon {
-      font-size: 2.2rem;
-      margin-bottom: 0.75rem;
-      color: var(--gold);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ffd700;
     }
-    .dl-card h3 {
-      font-size: 1.15rem;
-      margin: 0 0 0.4rem;
+    .download-btn h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
       text-align: center;
       color: #fff;
     }
-    .dl-card p {
-      font-size: 0.95rem;
-      color: var(--muted);
+    .download-btn p {
+      font-size: 0.9rem;
+      color: #ccc;
       text-align: center;
       margin: 0;
-      line-height: 1.35;
     }
-
-    /* Controller card accent */
-    .controller-card {
-      border-width: 3px;
-      border-color: #ff6b6b;
-      background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-dark) 100%);
-    }
-    .controller-card .download-icon { color: var(--gold); }
-
-    /* Button row inside cards */
-    .btn-row {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 0.85rem;
-    }
-
-    /* Buttons */
-    .btn {
-      display: inline-block;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 700;
-      line-height: 1;
-      padding: 6px 10px;           /* small button */
-      font-size: 13px;             /* small text */
-      transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-      white-space: nowrap;
-    }
-    .btn:hover, .btn:focus-visible {
-      transform: translateY(-1px);
-      outline: none;
-    }
-
-    .btn-primary {
-      background: #c62828;
-      color: #fff;
-      box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
-    }
-    .btn-primary:hover, .btn-primary:focus-visible {
-      background: #ad1f1f;
-    }
-
-    .btn-blue {
-      background: var(--blue);
-      color: #fff;
-      box-shadow: 0 1px 0 rgba(0,0,0,0.2) inset;
-    }
-    .btn-blue:hover, .btn-blue:focus-visible {
-      background: var(--blue-dark);
-    }
-
-    /* Back to home */
-    .back-home {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.8rem 1.4rem;
-      background: var(--brand-red);
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: all 0.25s ease;
-    }
-    .back-home:hover,
-    .back-home:focus-visible {
-      background: var(--brand-red-dark);
-      transform: translateY(-2px);
-      outline: none;
-    }
-
-    /* Site header/footer */
-    .mmm-header, .mmm-footer {
-      color: #eee;
-      text-align: center;
-      padding: 1rem;
-    }
-    .mmm-header {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(0,0,0,0.6);
-      padding-inline: 1rem;
+    .controller-btn {
