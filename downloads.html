@@ -1,175 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MEDIA MAD MEN - Downloads</title>
+
+  <!-- SEO -->
   <meta name="description" content="Download Media Mad Men apps for Amazon Firestick, Android TV, mobile devices, and web player.">
   <meta name="keywords" content="Media Mad Men, downloads, apps, Firestick, Android TV, mobile app, web player, controller app">
-  <link rel="canonical" href="https://mediamadmen.com/downloads.html">
-  <meta property="og:title" content="MEDIA MAD MEN - Downloads">
+  <link rel="canonical" href="https://mediamadmenproperty="og:title" content="MEDIA MAD MEN - Downloads">
   <meta property="og:description" content="Download Media Mad Men apps for all your devices">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mediamadmen.com/downloads.html">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
+
   <style>
+    :root{
+      --brand-red:#e63946;
+      --brand-red-dark:#b71c1c;
+      --gold:#ffd700;
+      --text:#f5f5f5;
+      --muted:#ccc;
+      --card-bg1:#2c2c2c;
+      --card-bg2:#1a1a1a;
+      --border:#444;
+      --page-bg: rgba(24, 24, 24, 0.9);
+      --blue:#007bff;
+      --blue-dark:#0056b3;
+    }
+
+    /* Page */
     .downloads-page {
       min-height: 100vh;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                  url('https://images.pexels.com/photos/17561470/pexels-photo-17561470.jpeg') center/cover fixed;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('https://images.pexels.com/photos/17561470/pexels-photo-17561470.jpeg')
+        center/cover fixed;
       padding: 2rem;
     }
-    
+
     .downloads-container {
       max-width: 1000px;
       margin: 0 auto;
-      background: rgba(24, 24, 24, 0.9);
+      background: var(--page-bg);
       border-radius: 20px;
       padding: 3rem;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
-    
+
+    /* Header block */
     .downloads-header {
       text-align: center;
       margin-bottom: 3rem;
     }
-    
     .downloads-header h1 {
       font-size: 3.5rem;
-      color: #e63946;
+      color: var(--brand-red);
       font-family: 'Bebas Neue', Impact, sans-serif;
       letter-spacing: 3px;
       margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
-    
     .downloads-header p {
       font-size: 1.3rem;
-      color: #f5f5f5;
+      color: var(--text);
       max-width: 600px;
       margin: 0 auto;
     }
-    
+
+    /* Sections */
     .download-section {
       margin-bottom: 3rem;
     }
-    
     .download-section h2 {
-      color: #ffd700;
+      color: var(--gold);
       font-size: 2rem;
       margin-bottom: 1.5rem;
       text-align: center;
-      border-bottom: 2px solid #e63946;
+      border-bottom: 2px solid var(--brand-red);
       padding-bottom: 0.5rem;
     }
-    
+
+    /* Grid & Cards */
     .download-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
       margin-bottom: 2rem;
     }
-    
+
     .download-btn {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-      border: 2px solid #444;
+      background: linear-gradient(135deg, var(--card-bg1) 0%, var(--card-bg2) 100%);
+      border: 2px solid var(--border);
       border-radius: 15px;
       padding: 1.5rem;
       text-decoration: none;
-      color: #f5f5f5;
+      color: var(--text);
       transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
-    
-    .download-btn:hover {
+    .download-btn:hover,
+    .download-btn:focus-visible {
       transform: translateY(-5px);
-      border-color: #e63946;
+      border-color: var(--brand-red);
       box-shadow: 0 8px 25px rgba(230, 57, 70, 0.3);
+      outline: none;
     }
-    
     .download-icon {
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      color: #ffd700;
+      color: var(--gold);
     }
-    
     .download-btn h3 {
       font-size: 1.3rem;
       margin-bottom: 0.5rem;
       text-align: center;
       color: #fff;
     }
-    
     .download-btn p {
-      font-size: 0.9rem;
-      color: #ccc;
+      font-size: 0.95rem;
+      color: var(--muted);
       text-align: center;
       margin: 0;
+      line-height: 1.4;
     }
-    
+
+    /* Special styling for Controller card */
     .controller-btn {
-      background: linear-gradient(135deg, #e63946 0%, #b71c1c 100%) !important;
+      background: linear-gradient(135deg, var(--brand-red) 0%, var(--brand-red-dark) 100%) !important;
       border-color: #ff6b6b !important;
       border-width: 3px !important;
     }
-    
-    .controller-btn:hover {
-      background: linear-gradient(135deg, #ff6b6b 0%, #e63946 100%) !important;
-      border-color: #ffd700 !important;
-      transform: scale(1.05) !important;
+    .controller-btn:hover,
+    .controller-btn:focus-visible {
+      background: linear-gradient(135deg, #ff6b6b 0%, var(--brand-red) 100%) !important;
+      border-color: var(--gold) !important;
+      transform: translateY(-6px) scale(1.02) !important;
+      outline: none;
     }
-    
     .controller-btn .download-icon {
-      color: #ffd700;
+      color: var(--gold);
     }
-    
+
+    /* Small blue button for 7-Zip */
+    .helper-actions {
+      text-align: center;
+      margin-top: 0.75rem;
+    }
+    .blue-btn {
+      display: inline-block;
+      background-color: var(--blue);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      line-height: 1;
+      transition: background-color 0.25s ease, transform 0.2s ease;
+    }
+    .blue-btn:hover,
+    .blue-btn:focus-visible {
+      background-color: var(--blue-dark);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    /* Back to home */
     .back-home {
       display: inline-block;
       margin-top: 2rem;
       padding: 1rem 2rem;
-      background: #e63946;
+      background: var(--brand-red);
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
       transition: all 0.3s ease;
     }
-    
-    .back-home:hover {
-      background: #b71c1c;
+    .back-home:hover,
+    .back-home:focus-visible {
+      background: var(--brand-red-dark);
       transform: translateY(-2px);
+      outline: none;
     }
-    
+
+    /* Site header/footer */
+    .mmm-header, .mmm-footer {
+      color: #eee;
+      text-align: center;
+      padding: 1rem;
+    }
+    .mmm-header {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0,0,0,0.6);
+      padding-inline: 1rem;
+    }
+    .mmm-logo {
+      height: 48px;
+      width: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .mmm-header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: background 0.25s ease;
+    }
+    .mmm-header nav a:hover,
+    .mmm-header nav a:focus-visible {
+      background: rgba(255,255,255,0.08);
+      outline: none;
+    }
+    .mmm-footer {
+      background: rgba(0,0,0,0.7);
+    }
+
+    /* Responsive */
     @media (max-width: 768px) {
       .downloads-container {
         padding: 2rem;
         margin: 1rem;
       }
-      
       .downloads-header h1 {
         font-size: 2.5rem;
       }
-      
       .downloads-header p {
         font-size: 1.1rem;
       }
-      
       .download-grid {
         grid-template-columns: 1fr;
+      }
+      .mmm-header {
+        flex-direction: column;
+        gap: 0.75rem;
       }
     }
   </style>
 </head>
+
 <body>
-  <header class="mmm-header">
-    <img src="assets/madmen-logo.jpg" alt="Media Mad Men logo" class="mmm-logo" onerror="this.onerror=null;this.src='assets/hero.jpg';">
-    <nav>
+  <header class="mmm-header" role="banner">
+    <img src="assets/madmen-logo.jpg"
+         alt="Media Mad Men logo"
+         class="mmm-logo"
+         loading="lazy"
+         onerror="this.onerror=null;this.src='assets/hero.jpg';">
+    <nav aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="index.html#about">About</a>
       <a href="index.html#services">Services</a>
@@ -178,84 +268,36 @@
     </nav>
   </header>
 
-  <main class="downloads-page">
+  <main class="downloads-page" role="main">
     <div class="downloads-container">
       <div class="downloads-header">
         <h1>MADSIGNS Downloads</h1>
         <p>Download MADSIGNS apps for all your devices - all apps are for MADSIGNS</p>
       </div>
 
-      <div class="download-section">
-        <h2>Player App Downloads</h2>
+      <!-- Player Apps -->
+      <section class="download-section" aria-labelledby="player-apps">
+        <h2 id="player-apps">Player App Downloads</h2>
+
         <div class="download-grid">
-          <a href="https://dl.ablesign.tv/ftvapp.apk" class="download-btn" download>
+          <a href="https://dl.ablesign.tv/ftvapp.apk"
+             class="download-btn"
+             download
+             aria-label="Download Amazon Firestick and Fire TV player app">
             <div class="download-icon">📺</div>
             <h3>Amazon Firestick/TV App</h3>
-            <p>Download for Amazon Fire TV devices</p>
-          </a>
-          
-          <a href="https://dl.ablesign.tv/atvapp.apk" class="download-btn" download>
-            <div class="download-icon">📱</div>
-            <h3>Android TV Player App</h3>
-            <p>Download for Android TV devices</p>
-          </a>
-          
-          <a href="https://dl.ablesign.tv/atvapp.apk" class="download-btn" download>
-            <div class="download-icon">📲</div>
-            <h3>Android Mobile/Tablet App</h3>
-            <p>Download for Android phones and tablets</p>
-          </a>
-          
-          <a href="https://player.ablesign.tv" class="download-btn">
-            <div class="download-icon">🌐</div>
+            <p>Download for Amazon Fire>Download for Androidobile/Tablet App</h3>
+           🌐</div>
             <h3>Web Player App</h3>
             <p>Access our web player directly</p>
-          </a>
-        </div>
-      </div>
-
-      <div class="download-section">
-        <h2>MADSIGNS Media Controller App For Windows PC</h2>
-        <div class="download-grid">
-          <a href="https://drive.usercontent.google.com/download?id=17R_lNZtQleKUU_eWmpOEX-6OgIzs-Qx2&export=download&authuser=1&confirm=t&uuid=1d00afb7-9344-402f-be5c-79831b14a619&at=AN8xHoqfRwrDXHjzZZyYwEKdSFsy:1757057059743" 
-             class="download-btn controller-btn" download>
+          </.com/download?id=17R_lNZtQleKUU_eWmpOEX-6OgIzs-Qx2&export=download&authuser=1&confirm=t&uuid=1d00afb7-9344-402f-be5c-79831b14a619&at=AN8xHoqfRwrDXHjzZZyYwEKdSFsy:1757057059743"
+             class="download-btn controller-btn"
+             download
+             aria-label="Download MADSIGNS Controller App for Windows PC">
             <div class="download-icon">🎮</div>
             <h3>Controller App</h3>
-            <p>Download the premium controller application (Licensed Logins Required)
-              Note:copy zip file to C: drive then create a shortcut for the executable on the desktop. if extraction errors occur download 7zip and use it to extract .
-      </p>
-            <!-- Add this inside your downloads-container, wherever you want the button to appear -->
-<div style="text-align: center; margin-top: 20px;">
-  <a href="https://7-zip.org/" class="blue-btn" target display: inline-block;
-    background-color: #007BFF; /* Bootstrap blue */
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .blue-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-</style>
-          </a>
-        </div>
-      </div>
-
-      <div style="text-align: center;">
-        <a href="index.html" class="back-home">← Back to Home</a>
-      </div>
-    </div>
-  </main>
-
-  <footer class="mmm-footer">
-    <p>&copy; 2025 MEDIA MAD MEN. Inspired by the Mad Men series. All rights reserved.</p>
-  </footer>
-</body>
-
-</html>
-
-
+            <p>
+              Download the premium controller application (Licensed Logins Required).<br>
+              <strong>Note:</strong> Copy the ZIP file to <code>C:\</code>, then create a desktop shortcut for the executable.
+              If extraction errors occur, download 7-Zip and use it to extract.
+            </p>
