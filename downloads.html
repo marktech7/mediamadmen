@@ -6,7 +6,7 @@
   <title>MEDIA MAD MEN - Downloads</title>
   <meta name="description" content="Download Media Mad Men apps for Amazon Firestick, Android TV, mobile devices, and web player.">
   <meta name="keywords" content="Media Mad Men, downloads, apps, Firestick, Android TV, mobile app, web player, controller app">
-  <link rel="canonical" hrefwnloads.html
+  https://mediamadmen.com/downloads.html
   <meta property="og:title" content="MEDIA MAD MEN - Downloads">
   <meta property="og:description" content="Download Media Mad Men apps for all your devices">
   <meta property="og:type" content="website">
@@ -20,6 +20,7 @@
                   url('https://images.pexels.com/photos/17561470/pexels-photo-17561470.jpeg') center/cover fixed;
       padding: 2rem;
     }
+    
     .downloads-container {
       max-width: 1000px;
       margin: 0 auto;
@@ -30,10 +31,12 @@
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
+    
     .downloads-header {
       text-align: center;
       margin-bottom: 3rem;
     }
+    
     .downloads-header h1 {
       font-size: 3.5rem;
       color: #e63946;
@@ -42,15 +45,18 @@
       margin-bottom: 0.5rem;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
+    
     .downloads-header p {
       font-size: 1.3rem;
       color: #f5f5f5;
       max-width: 600px;
       margin: 0 auto;
     }
+    
     .download-section {
       margin-bottom: 3rem;
     }
+    
     .download-section h2 {
       color: #ffd700;
       font-size: 2rem;
@@ -59,12 +65,14 @@
       border-bottom: 2px solid #e63946;
       padding-bottom: 0.5rem;
     }
+    
     .download-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
       margin-bottom: 2rem;
     }
+    
     .download-btn {
       display: flex;
       flex-direction: column;
@@ -78,26 +86,88 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
+    
     .download-btn:hover {
       transform: translateY(-5px);
       border-color: #e63946;
       box-shadow: 0 8px 25px rgba(230, 57, 70, 0.3);
     }
+    
     .download-icon {
       font-size: 2.5rem;
       margin-bottom: 1rem;
       color: #ffd700;
     }
+    
     .download-btn h3 {
       font-size: 1.3rem;
       margin-bottom: 0.5rem;
       text-align: center;
       color: #fff;
     }
+    
     .download-btn p {
       font-size: 0.9rem;
       color: #ccc;
       text-align: center;
       margin: 0;
     }
+    
     .controller-btn {
+      background: linear-gradient(135deg, #e63946 0%, #b71c1c 100%) !important;
+      border-color: #ff6b6b !important;
+      border-width: 3px !important;
+    }
+    
+    .controller-btn:hover {
+      background: linear-gradient(135deg, #ff6b6b 0%, #e63946 100%) !important;
+      border-color: #ffd700 !important;
+      transform: scale(1.05) !important;
+    }
+    
+    .controller-btn .download-icon {
+      color: #ffd700;
+    }
+    
+    .back-home {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #e63946;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    
+    .back-home:hover {
+      background: #b71c1c;
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .downloads-container {
+        padding: 2rem;
+        margin: 1rem;
+      }
+      
+      .downloads-header h1 {
+        font-size: 2.5rem;
+      }
+      
+      .downloads-header p {
+        font-size: 1.1rem;
+      }
+      
+      .download-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="mmm-header">
+    <img src="assets/madmen-logo.jpg" alt="Media Mad Men logo" class="mmm-logo" onerror="this.onerror=null;this.src='assets/hero.jpg';">
+    <nav>
+      <a href="index.html">Home</a>
