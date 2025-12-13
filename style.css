@@ -83,6 +83,16 @@ nav a:hover {
   color: #e63946;
   margin-bottom: 1.5em;
 }
+.mmm-subheading {
+  margin: 2em auto 0.6em auto;
+  font-size: 1.5em;
+  color: #ffd700;
+  letter-spacing: 1px;
+  max-width: 900px;
+}
+.mmm-products-list {
+  margin-top: 0.6em;
+}
 .mmm-services-list {
   display: flex;
   flex-wrap: wrap;
@@ -108,6 +118,16 @@ nav a:hover {
   font-size: 1.3em;
   margin-bottom: 0.5em;
   font-weight: 600;
+}
+/* Image inside service cards */
+.mmm-service-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8em;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  border: 2px solid #333;
 }
 .mmm-service p {
   color: #ccc;
@@ -272,6 +292,24 @@ nav a:hover {
 .mmm-contact-details a.mmm-whatsapp-btn:hover {
   background: #128c7e;
   transform: scale(1.05);
+}
+/* CTA button for service cards */
+.mmm-cta-button {
+  display: inline-block;
+  margin-top: 0.9em;
+  background: linear-gradient(90deg, #ffd700 0%, #ffec8a 100%);
+  color: #222;
+  font-weight: 700;
+  padding: 0.7em 1.2em;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(255,215,0,0.22);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.mmm-cta-button:hover {
+  background: linear-gradient(90deg, #ffcc00 0%, #ffe066 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,215,0,0.28);
 }
 @media (max-width: 900px) {
   .mmm-services-list, .mmm-gallery {
